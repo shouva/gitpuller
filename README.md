@@ -1,5 +1,5 @@
 # GitPuller
-this tool to pull js project and automatic build. idiom with:
+this tool to pull js project and automatic build. identical to:
 ```
 cd to\js\path\project
 git pull 
