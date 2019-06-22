@@ -29,6 +29,11 @@ func main() {
 }
 
 func runUpdate() {
+	defer func() {
+		if r := recover(); r != nil {
+			fmt.Println("Recover :", r)
+		}
+	}()
 	cmd := exec.Command("git", "pull")
 	cmd.Dir = setting.Path
 	b, err := cmd.Output()
