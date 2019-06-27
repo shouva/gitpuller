@@ -34,7 +34,12 @@ func runUpdate() {
 			fmt.Println("Recover :", r)
 		}
 	}()
-	cmd := exec.Command("git", "pull")
+	var cmd *exec.Cmd
+	if len(setting.Branch) > 0 {
+		cmd = exec.Command("git", "pull", "origin", setting.Branch)
+	} else {
+		cmd = exec.Command("git", "pull")
+	}
 	cmd.Dir = setting.Path
 	b, err := cmd.Output()
 	if err != nil {
@@ -57,6 +62,7 @@ func runUpdate() {
 
 // Setting :
 type Setting struct {
-	Path  string `json:"path"`
-	Delay int    `json:"delay"`
+	Path   string `json:"path"`
+	Delay  int    `json:"delay"`
+	Branch string `json:"branch"`
 }

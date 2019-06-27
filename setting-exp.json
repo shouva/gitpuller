@@ -1,4 +1,5 @@
 {
     "path":"~/js/metalandon",
-    "delay": 10
+    "delay": 10,
+    "origin": "master"
 }
