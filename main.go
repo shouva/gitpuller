@@ -15,7 +15,7 @@ func main() {
 
 	currentdir := helper.GetCurrentPath(false)
 
-	err := helper.ReadConfig(currentdir+"/setting.json", &setting)
+	err := helper.ReadConfig(currentdir+"/jsbuilder.json", &setting)
 	if err != nil {
 		panic(err)
 	}
