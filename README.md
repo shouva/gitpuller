@@ -1,4 +1,4 @@
-# GitPuller
+# JSBuilder
 this tool to pull js project and automatic build. identical to:
 ```
 cd to\js\path\project
@@ -13,7 +13,7 @@ you can setting path of js source and delay time.
 ## How to Use
 
   1. install
-     ```go get github.com/shouva/gitpuller```
+     ```go get github.com/shouva/jsbuilder```
   2. create config
       ```
       vim setting.json
@@ -27,5 +27,5 @@ you can setting path of js source and delay time.
    
   3. run it!
   ```
-  gitpuller
+  jsbuilder
   ```
