@@ -16,7 +16,7 @@ you can setting path of js source and delay time.
      ```go get github.com/shouva/jsbuilder```
   2. create config
       ```
-      vim setting.json
+      vim jsbuilder.json
       ```
       add this text:
       ```
